@@ -94,9 +94,12 @@ class _SearchPageState extends State<SearchPage> {
             ]),
           ),
           _isLoading
-              ? Center(
-                  child: CircularProgressIndicator(
-                    color: Theme.of(context).primaryColor,
+              ? Container(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Center(
+                    child: CircularProgressIndicator(
+                      color: Theme.of(context).primaryColor,
+                    ),
                   ),
                 )
               : groupList(),
@@ -179,7 +182,7 @@ class _SearchPageState extends State<SearchPage> {
             showSnackBar(
                 context, Colors.green, "Successfully joined the group.");
             Future.delayed(const Duration(seconds: 2), () {
-              nextScreen(
+              nextScreenReplace(
                   context,
                   ChatPage(
                       groupId: groupId,
