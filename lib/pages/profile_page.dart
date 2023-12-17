@@ -119,7 +119,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 170),
+        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 170),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -128,7 +128,7 @@ class _ProfilePageState extends State<ProfilePage> {
               color: Colors.grey[700],
               size: 200,
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Row(
@@ -140,11 +140,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 Text(
                   widget.userName,
-                  style: TextStyle(fontSize: 17),
+                  style: const TextStyle(fontSize: 17),
                 )
               ],
             ),
-            Divider(
+            const Divider(
               height: 20,
             ),
             Row(
@@ -156,7 +156,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
                 Text(
                   widget.email,
-                  style: TextStyle(fontSize: 17),
+                  style: const TextStyle(fontSize: 17),
                 )
               ],
             ),
